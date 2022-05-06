@@ -1,3 +1,99 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: beige;
+    background-color: var(--preto);
+    font-family: 'arial', Times, serif;
+    color: white;
+}
+
+header .container{
+display: flex;
+flex-direction: row;
+align-items: center;
+font-size: 16px;
+}
+
+header .logo{
+    color:var(--vermelho);
+    font-family: "arial black";
+    font-size: 40px;
+    margin-left: 10px;
+}
+header nav{
+    margin-left: 700px;
+   
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    transition: 1s;
+   
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0,.65),rgba(0, 0, 0,.65)),url('/img/suits1.jpg');
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 50%;
+}
+
+.titulo{
+    font-size:40px;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0,.50);
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-right:30px;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.container{
+    margin-left: 50px;
+}
+
+.filme-principal .container{
+    width: 80%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
 }
